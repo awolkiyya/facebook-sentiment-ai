@@ -1,0 +1,29 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+# macOS
+.DS_Store
+
+# Environment and secrets
+.env.*
+!.env.example
+
+# Python
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# macOS
+.DS_Store
+
+# Model artifacts - deploy separately
+models/
+
+# Training and review datasets - keep out of source repository
+municipal-priority-dataset/
+municipal-sentiment-dataset/
+municipal-topic-dataset/

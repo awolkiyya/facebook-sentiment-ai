@@ -1,0 +1,99 @@
+# =============================================================================
+# Municipal AI Service - Python Dependencies
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# API Framework
+# -----------------------------------------------------------------------------
+
+# FastAPI framework for exposing AI inference APIs.
+fastapi==0.116.1
+
+# ASGI server used to run the FastAPI application.
+# Includes standard Uvicorn dependencies.
+uvicorn[standard]==0.35.0
+
+
+# -----------------------------------------------------------------------------
+# Configuration & Data Validation
+# -----------------------------------------------------------------------------
+
+# Data validation and request/response schemas.
+pydantic==2.11.7
+
+# Environment-based application configuration using Pydantic.
+pydantic-settings==2.10.1
+
+
+# -----------------------------------------------------------------------------
+# Machine Learning / Model Inference
+# -----------------------------------------------------------------------------
+
+# PyTorch runtime used for neural-network inference.
+# Supports CPU, CUDA, and Apple Silicon MPS depending on the environment.
+torch==2.8.0
+
+# Hugging Face Transformers.
+# Used to load and run:
+# - Language detection models
+# - Sentiment classification models
+# - Future topic classification models
+transformers==4.55.4
+
+# Fast tokenization for Transformer models.
+tokenizers==0.21.4
+
+# Secure and efficient loading of model weights stored as .safetensors.
+safetensors==0.6.2
+
+
+# -----------------------------------------------------------------------------
+# Numerical Computing
+# -----------------------------------------------------------------------------
+
+# Numerical operations required by PyTorch and Transformer workflows.
+numpy==2.3.2
+
+
+# -----------------------------------------------------------------------------
+# Data Processing / Dataset Preparation
+# -----------------------------------------------------------------------------
+
+# DataFrame-based dataset loading, manipulation, and TSV generation.
+pandas==2.3.2
+
+# Stratified train/dev/test dataset splitting.
+scikit-learn==1.7.1
+
+
+# -----------------------------------------------------------------------------
+# HTTP / Environment Utilities
+# -----------------------------------------------------------------------------
+
+# Async HTTP client.
+# Used for internal service communication and integration tests.
+httpx==0.28.1
+
+# Loads environment variables from .env files.
+python-dotenv==1.1.1
+
+
+# -----------------------------------------------------------------------------
+# Structured Logging
+# -----------------------------------------------------------------------------
+
+# Structured JSON logging for production observability.
+# Useful for request IDs, model versions, latency, errors, etc.
+structlog==25.4.0
+
+
+# -----------------------------------------------------------------------------
+# Testing
+# -----------------------------------------------------------------------------
+
+# Python testing framework.
+pytest==8.4.1
+
+# Async support for testing FastAPI endpoints and async services.
+pytest-asyncio==1.1.0
